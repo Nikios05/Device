@@ -7,9 +7,10 @@
 <body>
     <header class="main-header"> 
     <nav>
-        <a class="main-header-logo">Device</a>
+        <h1><a class="main-header-logo">Device</a></h1>
         <ul class="user-navigation">
             <li >
+                Поиск по сайту
                 <!--Форма для поиска по сайту-->
             </li>
             <li сlass="user-navigation-login">Войти</li>
@@ -20,24 +21,48 @@
             <li>
                 <a href="catalog.html">Каталог товаров</a>
                 <ul class="site-navigation--catalog-list">
-                    <li>Виртуальная реальность</li>
-                    <li>Моноподы для селфи</li>
-                    <li>Экшнс-камеры</li>
-                    <li>Фитнес-браслеты</li>
-                    <li>Умные часы</li>
-                    <li>Квадрокоптеры</li>
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Экшнс-камеры</a></li>
+                    <li><a href="#">Фитнес-браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <li><a href="#">Квадрокоптеры</a></li>
                 </ul>
             </li>
-            <li><a href="deliery.html"></a></li>
-            <li><a href="warranty.html"></a></li>
-            <li><a href="contats.html"></a></li>
+            <li><a href="deliery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contats.html">Контакты</a></li>
         </ul>
-        
     </nav>
     </header>
 
-    <main>
-
+    <main class="content">
+        <h2 class="visually-hidden">Слайды товаров</h2>
+        <section class="slide-1">
+          <h3>Делай селфи, как Бен Стиллер!</h3>
+          <b class="slide-count">01</b>
+          <img src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+          <p>Самая длинная палка для селфи доступна в нашем магазине. 
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a href="#">Подробнее</a>
+          <ul class="slide-switch">
+              <li><input type="radio" checked>1</li>
+              <li><input type="radio">2</li>
+              <li><input type="radio">3</li>
+          </ul>
+          <table class="slide-info">
+            <tr class="slide-info-value">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+            </tr>
+            <tr class="slide-info-indicator">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+            </tr>
+          </table>
+        </section>
     </main>
 
     <footer>
