@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Device</title>
 </head>
 <body>
@@ -47,9 +48,9 @@
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#" class="btn slider-btn">Подробнее</a>
           <ul class="slider-switch">
-              <li><input type="radio" checked>1</li>
-              <li><input type="radio">2</li>
-              <li><input type="radio">3</li>
+              <li><input type="radio" name="slider-switch"  checked></li>
+              <li><input type="radio" name="slider-switch"></li>
+              <li><input type="radio" name="slider-switch" ></li>
           </ul>
           <table class="slider-info">
             <tr class="slider-info-value">
@@ -81,7 +82,8 @@
           <h2 class="visually-hidden">Предлагаемые сервисы</h2>
           <ul class="service-list">
             <li>
-              <button class="btn deliery-btn">Доставка</button>
+              <input type="radio" name="service-radio" id="service-deliery" checked>
+              <label for="service-deliery">Доставка</label>
               <b class="deliery-caption">Доставка</b>
               <p class="deliery-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -90,7 +92,8 @@
               </p>
             </li>
             <li>
-              <button class="btn warranty-btn">Гарантия</button>
+              <input type="radio" name="service-radio" id="service-warranty">
+              <label for="service-warranty">Гарантия</label>
               <b class="warranty-caption">Гарантия</b>
               <p class="warranty-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -99,7 +102,8 @@
               </p>
             </li>
             <li>
-              <button class="btn credit-btn">Кредит</button>
+              <input type="radio" name="service-radio" id="service-credit">
+              <label for="service-credit">Кредит</label>
               <b class="credit-caption">Кредит</b>
               <p class="credit-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -113,10 +117,10 @@
         <section class="clients">
           <h2 class="visually-hidden">Yнаши клиенты</h2>
           <ul class="clients-list">
-            <li>dji</li>
-            <li>sp gadgets</li>
-            <li>GoPro</li>
-            <li>Vive</li>
+            <li><img src="img/dji.png" alt="Dji">Dji</li>
+            <li><img src="img/sp-gadgets.png" alt="Sp Gadgets">Sp Gadgets</li>
+            <li><img src="img/GoPro.png" alt="GoPro">GoPro</li>
+            <li><img src="img/Vive.png" alt="Vive">Vive</li>
           </ul>
         </section>
 
@@ -144,7 +148,8 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <!--Добавить карту-->
+          <img src="img/maps.png" alt="Карта офиса по адресу улица Строителей, 15">
+          <!--Добавить интерактивную карту-->
           <a href="#" class="btn contats-btn">Напишите нам</a>
         </section>
     </main>
@@ -152,7 +157,6 @@
     <footer>
       <h2><a class="main-header-logo">Device</a></h2>
       <p class="address">г. Москва, ул. Строителей, 15</p>
-      <nav class="footer-navigation">
           <ul class="user-navigation">
               <li сlass="user-navigation-login">Войти</li>
               <li сlass="user-navigation-compare">Сравнить</li>
@@ -163,13 +167,14 @@
               <li><a href="warranty.html">Гарантия</a></li>
               <li><a href="contats.html">Контакты</a></li>
           </ul>
-      </nav>
+
         <p class="phone-number">Тел: +7(495)495-95-95</p>
         <ul class="social">
-          <li><a href="www.facebook.com/‎">facebook</a></li>
-          <li><a href="www.instagram.com/‎">instagram</a></li>
-          <li><a href="www.vk.com/‎">vk</a></li>
+          <li><a href="www.facebook.com/‎">Facebook</a></li>
+          <li><a href="www.instagram.com/‎">Instagram</a></li>
+          <li><a href="www.vk.com/‎">Vkontakte</a></li>
         </ul>
     </footer>
+
 </body>
 </html>
