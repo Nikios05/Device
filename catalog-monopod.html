@@ -13,20 +13,27 @@
         <ul class="user-navigation">
             <li class="user-navigation-search">
               <form class="form-search" action="" method="GET">
-                <input class="form-search-entry" type="text" placeholder="Поиск по сайту">
-                <input class="visually-hidden btn-search" type="submit" value="Найти">
+                <input class="form-search-entry" id="form-search-entry" type="text" placeholder="Поиск по сайту">
+                <label for="form-search-entry"></label>
+                <input class="visually-hidden btn-search" id="form-btn-entry" type="submit" value="Найти">
+                <label class="form-btn-entry" for="form-btn-entry"></label>
               </form>
             </li>
+            <div class="navigation-wrapper">
             <li class="user-navigation-login"><a href="#">Войти</a></li>
             <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
             <li class="user-navigation-basket"><a href="#">Корзина</a></li>
-        </ul>
+            </div>
+          </ul>
         <ul class="site-navigation">
             <li class="site-navigation-catalog"><a href="catalog.html">Каталог товаров</a></li>
+            <div class="navigation-wrapper">
             <li class="site-navigation-delivery"><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
+            <li class="site-navigation-warranty"><a href="warranty.html">Гарантия</a></li>
             <li class="site-navigation-contacts"><a href="contacts.html">Контакты</a></li>
+            </div>
         </ul>
+        <div class="catalog-navigation-wrapper">
         <ul class="catalog-navigation">
             <div class="catalog-navigation-section">
             <li><a href="#">Виртуальная реальность</a></li>
@@ -40,9 +47,12 @@
             <div class="catalog-navigation-section">
             <li><a href="#">Квадрокоптеры</a></li>
             </div>
+            
         </ul>
+        </div>
     </nav>
     </header>
+    
     <main class="content">
         <div class="container">
         <h2 class="page-title">Моноподы для селфи</h2>
@@ -185,9 +195,9 @@
       <div class="footer-top container">
       <span class="logo-footer">Device</span>
       <ul class="footer-user-navigation">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="user-navigation-login"><a href="#">Войти</a></li>
+        <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
+        <li class="user-navigation-basket"><a href="#">Корзина</a></li>
       </ul>
       </div>
       <div class="footer-middle container">
@@ -200,25 +210,26 @@
         <p class="phone-number">Тел: +7(495)495-95-95</p>
       </div>
       <div class="footer-bottom container">
+        <div class="footer-bottom-line"></div>
         <ul class="social-btn">
           <li>
             <a class="social-btn-facebook" href="http://www.facebook.com">
-              Facebook
+              <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li>
             <a class="social-btn-instagram" href="http://www.instagram.com">
-              Instagram
+              <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li>
             <a class="social-btn-tw" href="http://www.twitter.com">
-              Twitter
+              <span class="visually-hidden">Twitter</span>
             </a>
           </li>
         </ul>
         <p class="copyright">
-          <span>HTML Academy</span>
+          <a href="#"><span class="visually-hidden">HTML Academy</span></a>
         </p>
       </div>
     </footer>
