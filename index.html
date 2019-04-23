@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Device</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="main-header container">
@@ -47,17 +47,24 @@
             <div class="catalog-navigation-section">
             <li><a href="#">Квадрокоптеры</a></li>
             </div>
-            
         </ul>
         </div>
     </nav>
     </header>
 
     <main class="content">
-        <div class="container">
+        <div class="container"> 
+            <input class="visually-hidden" type="radio" id="product-1" name="togle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="togle">
+            <input class="visually-hidden" type="radio" id="product-3" name="togle">
         <section class="slider">
           <h2 class="visually-hidden">Слайды товаров</h2>
-        <div class="slide slider-one">
+          <div class="radio-switch">
+            <label for="product-1">первый</label>
+            <label for="product-2">второй</label>
+            <label for="product-3">третий</label>
+          </div>
+        <div class="slide slide-one">
           <div class="slide-left">
             <img src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
@@ -65,21 +72,9 @@
             <p class="slider-count">01</p>
             <p class="slider-caption">Делай селфи, <br>как Бен Стиллер!</p>
             <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине.
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <div class="slider-switching">
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
             <a href="#" class="btn slider-btn">Подробнее</a>
-            <ul class="slider-switches">
-                <li class="slide-radio">
-                      <button class="slide-btn">Первый слайд</button>
-                  </li>
-                <li>
-                      <button class="slide-btn">Второй слайд</button>
-                </li>
-                <li>
-                      <button class="slide-btn">Третий слайд</button>
-                </li>
-            </ul>
-            </div>
+            
             <table class="slider-info">
               <tr class="slider-info-value">
                 <td>8,5 м</td>
@@ -94,44 +89,54 @@
             </table>
           </div>
         </div>
-
-        <!-- Еще 2 слайда
-        <div class="slider-two">
-            <h3 class="slider-caption">Худеем правильно!</h3>
-            <b class="slider-count">02</b>
-            <img src="img/slide-2.png" width="345" height="485" alt="Самая длинная палка для селфи">
+        
+        <div class="slide slide-two">
+          <div class="slide-left">
+              <img src="img/slide-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+          </div>
+          <div class="slide-right">
+            <p class="slider-count">02</p>
+            <p class="slider-caption">Худеем <br>правильно!</p>
             <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы 
                 не пропускать занятия и соблюдать диету.</p>
+            <a href="#" class="btn slider-btn">Подробнее</a>
+
             <table class="slider-info">
               <tr class="slider-info-value">
-                  <td>48 часов</td>
+                <td>48 часов</td>
               </tr>
               <tr class="slider-info-indicator">
-                  <td>Без подзарядки</td>
+                <td>Без подзарядки</td>
               </tr>
             </table>
+          </div>
         </div>
 
-          <div class="slider-three">
-            <h3 class="slider-caption">Порхает как бабочка, жалит как пчела!</h3>
-            <b class="slider-count">03</b>
-            <img src="img/slide-3.png" width="526" height="334" alt="Самая длинная палка для селфи">
+        <div class="slide slide-three">
+          <div class="slide-left">
+            <img src="img/slide-3.png" width="526" height="334" alt="Квадрокоптер">
+          </div>
+          <div class="slide-right">
+            <p class="slider-count">03</p>
+            <p class="slider-caption">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен 
                 мощным лазером, замаскированным под стандартную камеру.</p>
+            <a href="#" class="btn slider-btn">Подробнее</a>
+
             <table class="slider-info">
               <tr class="slider-info-value">
-                  <td>800 м</td>
-                  <td>50 м</td>
+                <td>800 м</td>
+                <td>50 м</td>
               </tr>
               <tr class="slider-info-indicator">
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
               </tr>
             </table>
           </div>
-          -->
-          </section>
-          </div>
+        </div>
+        </section> 
+        </div>
 
         <section class="product container">
           <h2 class="visually-hidden">Типы продуктов</h2>
@@ -180,7 +185,7 @@
           <h2 class="visually-hidden">Предлагаемые сервисы</h2>
           <ul class="service-list">
             <li>
-              <button class="btn">Доставка</button>
+              <button class="btn service-active">Доставка</button>
             </li>
             <li>
               <button class="btn">Гарантия</button>
@@ -190,7 +195,7 @@
             </li>
           </ul>
 
-          <div class="service-description service-delivery">
+          <div class="service-description service-delivery service-show">
               <h3 class="service-caption">Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -224,19 +229,19 @@
           <ul class="brands-list">
             <li>
               <img src="img/logo-dji-off.jpg" width="127" height="73" alt="Dji">
-              <img src="img/logo-dji.jpg" width="127" height="73" alt="Dji">
+              <img class="brands-list-img" src="img/logo-dji.jpg" width="127" height="73" alt="Dji">
             </li>
             <li>
               <img src="img/logo-sp-gadgets-off.jpg" width="251" height="48" alt="Sp Gadgets">
-              <img src="img/logo-sp-gadgets.jpg" width="251" height="48" alt="Sp Gadgets">
+              <img class="brands-list-img img-active" src="img/logo-sp-gadgets.jpg" width="251" height="48" alt="Sp Gadgets">
             </li>
             <li>
               <img src="img/logo-gopro-off.jpg" width="184" height="48" alt="GoPro">
-              <img src="img/logo-gopro.jpg" width="184" height="48" alt="GoPro">
+              <img class="brands-list-img" src="img/logo-gopro.jpg" width="184" height="48" alt="GoPro">
             </li>
             <li>
               <img src="img/logo-vive-off.jpg" width="200" height="56" alt="Vive">
-              <img src="img/logo-vive.jpg" width="200" height="56" alt="Vive">
+              <img class="brands-list-img" src="img/logo-vive.jpg" width="200" height="56" alt="Vive">
             </li>
           </ul>
         </section>
@@ -266,10 +271,11 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
+          <p class="contacts-map">
           <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-          <!--Добавить интерактивную карту-->
+          <button class="btn btn-map">Увеличить</button>
+          </p>
           <a href="#" class="btn contats-btn">Напишите нам</a>
-
         </section>
         </div>
     </main>
@@ -320,7 +326,8 @@
     <section class="popup popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
-        <img src="img/popup-map.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">        
+        <img src="img/popup-map.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">   
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCRFB2-l" width="960" height="559" frameborder="0" allowfullscreen="true"></iframe>     
       </p>
       <button class="popup-close" type="button">Закрыть</button>
     </section>
@@ -333,17 +340,22 @@
           <input id="feedback-form-name" type="text" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="feedback-form-email">Ваше e-mail:</label>
+          <label for="feedback-form-email">Ваш e-mail:</label>
           <input type="text" id="feedback-form-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="feedback-form-text">Текс письма:</label>
+          <label for="feedback-form-text">Текст письма:</label>
           <textarea name="feedback-text" id="feedback-form-text" placeholder="В свободной форме"></textarea>
         </p>
-          <input class="btn" type="submit">
+          <label class="btn btn-feedback" for="btn-feedback">
+              Отправить
+          </label>
+          <input class="visually-hidden" type="submit" id="btn-feedback">
       </form>
       <button class="popup-close" type="button">Закрыть</button>
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
