@@ -1,16 +1,8 @@
-.a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: -webkit-linear-gradient(red, green);
-  background: linear-gradient(red, green);
-  }
-
 @font-face {
-  font-family: 'gilroyextrabold';
-  src: url('../fonts/gilroyextrabold-webGilroy.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold-webGilroy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -52,7 +44,8 @@ body {
     background-color: #ffffff;
 }
 
-.visually-hidden:not(:focus) {
+.visually-hidden:not(:focus),
+.visually-hidden {
     position: absolute;
 
     widows: 1px;
@@ -694,6 +687,14 @@ a {
     border-radius: 50%;
 }
 
+/* выделение radio-batton в слайдах для пролистования через TAB */
+/* #product-1:focus ~ .slider label[for="product-1"],
+#product-2:focus ~ .slider label[for="product-2"],
+#product-3:focus ~ .slider label[for="product-3"] {
+    outline: 2px solid lightblue;
+} */
+
+
 .slide-three img {
     padding-top: 62px;
 }
@@ -818,10 +819,13 @@ a {
 
 .service-list li {
     margin-bottom: 45px;
+
 }
 
 .service-list .btn {
     width: 160px;
+
+    outline: none;
 }
 
 .service-list .btn:active {
@@ -885,7 +889,7 @@ a {
 
     position: absolute;
     top: 50%;
-    margin-top: -87px;
+    margin-top: -100px;
     right: 65px;
 
     width: 136px;
@@ -903,7 +907,7 @@ a {
 
     position: absolute;
     top: 50%;
-    margin-top: -94px;
+    margin-top: -120px;
     right: 65px;
 
     width: 156px;
@@ -922,7 +926,7 @@ a {
 
     position: absolute;
     top: 50%;
-    margin-top: -98px;
+    margin-top: -120px;
     right: 65px;
 
     width: 171px;
