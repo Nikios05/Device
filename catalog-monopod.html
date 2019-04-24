@@ -20,7 +20,11 @@
               </form>
             </li>
             <div class="navigation-wrapper">
-            <li class="user-navigation-login"><a href="#">Войти</a></li>
+            <li class="user-navigation-login">
+              <a class="personal-entry inactive" href="#">Войти</a>
+              <a class="personal-entry user-name active" href="#">Валентин Петухов</a>
+              <a class="active" href="#">Выйти</a>
+            </li>
             <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
             <li class="user-navigation-basket"><a href="#">Корзина</a></li>
             </div>
@@ -64,8 +68,8 @@
         </div>
 
         <div class="main-wrapper" >
-        <div class="container">
-        <section class="filter">
+          <div class="filter-wrapper">
+            <section class="filter">
             <h3 class="filter-caption">Фильтр:</h3>
             <form class="filter-form" method="GET" action="">
             <fieldset>
@@ -109,7 +113,7 @@
                     </li>
                     <li class="filter-color">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                            name="Black" id="filter-color-pink">
+                            name="Black" id="filter-color-pink" disabled>
                             <label for="filter-color-pink">Розовый</label>
                     </li>
                 </ul>
@@ -132,13 +136,14 @@
             <button class="btn filter-btn" type="submit">Показать</button>
             </form>
         </section>
-
-        <section class="catalog">
+          </div>
+          <div class="catalog-wrapper">
+          <section class="catalog">
             <div class="catalog-sorting">
                 <h3 class="catalog-sorting-caption">Сортировка:</h3>
                 <ul class="catalog-sorting-list">
                     <li>
-                        <a class="catalog-sorting-price" href="#">По цене</a>
+                        <a class="catalog-sorting-price active" href="#">По цене</a>
                     </li>
                     <li>
                         <a class="catalog-sorting-type" href="#">По типу</a>
@@ -148,7 +153,7 @@
                     </li>
                 </ul>
                 <div class="catalog-sorting-wrapper">
-                <span class="catalog-sorting-up"></span>
+                <span class="catalog-sorting-up active"></span>
                 <span class="catalog-sorting-down"></span>
                 </div>
             </div>
@@ -227,14 +232,18 @@
                 <li class="pagination-item"><a href="#">Вперед</a></li>
             </ul>
         </section>
-        </div>
+          </div>
         </div>
     </main>
      <footer class="footer-main">
       <div class="footer-top container">
       <a class="logo-footer" href="index.html">Device</a>
       <ul class="footer-user-navigation">
-        <li class="user-navigation-login"><a href="#">Войти</a></li>
+        <li class="user-navigation-login">
+          <a class="personal-entry inactive" href="#">Войти</a>
+          <a class="personal-entry user-name active" href="#">Валентин Петухов</a>
+          <a class="active" href="#">Выйти</a>
+        </li>
         <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
         <li class="user-navigation-basket"><a href="#">Корзина</a></li>
       </ul>
