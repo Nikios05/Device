@@ -1353,15 +1353,21 @@ fieldset legend{
 }
 
 .main-wrapper {
-    width: 100%;
+    /* width: 100%; */
     /* background-color: rgba(0, 0, 0, 0.08); */
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.08) 70px, transparent 70px),
-    linear-gradient(90deg,rgba(0, 0, 0, 0.08) 30%, transparent 30%);
+    linear-gradient(90deg,rgba(0, 0, 0, 0.08) 70vmin, transparent 40vw);;
 }
 
 .main-wrapper .container {
     display: flex;
+}
+
+.filter {
+    width: 330px;
+    /* background-image:
+    linear-gradient(90deg,rgba(0, 0, 0, 0.08) 300px, transparent 300px); */
 }
 
 .filter-caption {
