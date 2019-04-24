@@ -205,7 +205,7 @@ a {
     padding-left: 27px;
 }
 
-.user-navigation-login a::before {
+.user-navigation-login .personal-entry::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -216,6 +216,10 @@ a {
     height: 12px;
 
     background: url(../svg/user-link.svg) no-repeat 0 0;
+}
+
+.user-navigation-login .inactive {
+  display: none;
 }
 
 .user-navigation-сompare  {
@@ -425,7 +429,10 @@ a {
     background-color: #f7e296;
 
     z-index: 5;
+}
 
+.inner-page .catalog-navigation-wrapper {
+  top: 130px;
 }
 
 .catalog-navigation-show {
@@ -1302,27 +1309,36 @@ footer .user-navigation-basket a::before {
 
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     margin-left: 60px;
 
     list-style: none;
 }
 
 .breadcrumbs li{
-    margin-right: 20px;
+    margin-right: 10px;
 
     font-family: "open_sanslight", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-transform: none;
-    color: #a4a4a4;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .breadcrumbs a {
     position: relative;
     padding-right: 20px;
 
-    color: #a4a4a4;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs a::after {
@@ -1339,11 +1355,6 @@ footer .user-navigation-basket a::before {
     background: url(../svg/nav-arrow.svg) no-repeat 0 0;
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:focus{
-    text-decoration: underline;
-}
-
 fieldset {
     border: none;
 }
@@ -1353,21 +1364,30 @@ fieldset legend{
 }
 
 .main-wrapper {
-    width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.08); */
+    display: flex;
+
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.08) 70px, transparent 70px),
-    linear-gradient(90deg,rgba(0, 0, 0, 0.08) 30%, transparent 30%);
+    linear-gradient(rgba(0, 0, 0, 0.08) 70px, transparent 70px);
 }
 
-.main-wrapper .container {
-    display: flex;
+.filter-wrapper {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.catalog-wrapper {
+    flex-grow: 1;
+}
+
+.filter {
+  width: 330px;
+  margin-left: auto;
 }
 
 .filter-caption {
     margin: 0;
     padding: 25px 60px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
 
     font-size: 16px;
     line-height: 24px;
@@ -1378,32 +1398,22 @@ fieldset legend{
     margin-left: 60px;
 }
 
-.filter-form fieldset:nth-child(1) {
-    margin-bottom: 35px;
-}
-
-.filter-form fieldset:nth-child(2) {
-    margin-bottom: 45px;
-}
-
-.filter-form fieldset:nth-child(3) {
-    margin-bottom: 50px;
-}
-
 .filter-form fieldset {
     margin: 0;
     padding: 0;
+    margin-bottom: 35px;
 }
 
-fieldset legend {
-    margin-bottom: 25px;
+
+.filter-form legend {
+    margin-bottom: 18px;
 }
 
 .filter-form legend::before {
     content: "";
     display: block;
 
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     width: 200px;
     height: 2px;
@@ -1420,10 +1430,7 @@ fieldset legend {
 .filter-range-controls {
     position: relative;
 
-    margin-bottom: 5px;
     padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
 
     height: 12px;
 }
@@ -1471,7 +1478,7 @@ fieldset legend {
 
 .filter-range-price label {
     display: inline-block;
-    width: 50%;
+    width: 49%;
 
     font-family: "gilroylight", Arial, sans-serif;
     font-size: 14px;
@@ -1509,6 +1516,7 @@ fieldset legend {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    cursor: pointer;
 }
 
 .filter-color label:disabled {
@@ -1532,6 +1540,7 @@ fieldset legend {
     background: url(../svg/filter-checkbox-on.svg) no-repeat 0 0;
 }
 
+
 .filter-bluetooth {
     position: relative;
     padding-left: 40px;
@@ -1544,6 +1553,7 @@ fieldset legend {
     font-size: 14px;
     line-height: 40px;
     text-transform: none;
+    cursor: pointer;
 }
 
 .filter-input[type="radio"] + label::before {
@@ -1563,12 +1573,28 @@ fieldset legend {
     background: url(../svg/filter-radio-on.svg) no-repeat 0 0;
 }
 
+.filter-input[type="checkbox"] + label:hover::before,
+.filter-input[type="checkbox"]+ label:focus::before,
+.filter-input[type="radio"]+ label:hover::before,
+.filter-input[type="radio"]+ label:focus::before  {
+  opacity: 0.6;
+}
+
+.filter-input[type="checkbox"]:disabled + label::before,
+.filter-input[type="radio"]:disabled + label::before,
+.filter-input[type="checkbox"]:disabled + label,
+.filter-input[type="radio"]:disabled + label {
+  opacity: 0.25;
+  cursor: default;
+}
+
 .filter-btn {
     width: 200px;
 }
 
 .catalog {
-    margin-left: auto;
+    margin-left: 70px;
+    margin-right: auto;
     width: 760px;
 }
 
@@ -1603,6 +1629,11 @@ fieldset legend {
     list-style: none;
 }
 
+.catalog-sorting-list li {
+  min-width: 60px;
+  margin-right: 25px;
+}
+
 .catalog-sorting-list li:not(li:last-child) {
     margin-right: 30px;
 }
@@ -1620,6 +1651,11 @@ fieldset legend {
     opacity: 0.3;
 }
 
+.catalog-sorting-list li>.active {
+  opacity: 1;
+  cursor: default;
+}
+
 .catalog-sorting-list li a:hover,
 .catalog-sorting-list li a:focus  {
     opacity: 0.6;
@@ -1632,6 +1668,11 @@ fieldset legend {
 .catalog-sorting-up,
 .catalog-sorting-down {
     cursor: pointer;
+    opacity: 0.2;
+}
+
+.catalog-sorting-up {
+    margin-right: 15px;
 }
 
 .catalog-sorting-up::after {
@@ -1642,7 +1683,6 @@ fieldset legend {
     height: 11px;
 
     background: url(../svg/sorting-icon.svg) no-repeat 0 0;
-    opacity: 0.2;
 }
 
 .catalog-sorting-down::before {
@@ -1654,7 +1694,6 @@ fieldset legend {
 
     transform: rotate(180deg);
     background: url(../svg/sorting-icon.svg) no-repeat 0 0;
-    opacity: 0.2;
 }
 
 .catalog-sorting-down:hover::before,
@@ -1669,13 +1708,17 @@ fieldset legend {
     opacity: 1;
 }
 
+.catalog-sorting-wrapper .active {
+    opacity: 1;
+    cursor: default;
+}
+
 .catalog-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
     padding:0;
-    margin-bottom: 35px;
 
     list-style: none;
 }
@@ -1765,7 +1808,7 @@ fieldset legend {
 
 .catalog-item-image {
     order: -1;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 
     font-size: 0;
 }
@@ -1773,10 +1816,10 @@ fieldset legend {
 .catalog-item-title {
     margin: 0;
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 
     font-family: "gilroyextrabold", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: 0;
 }
@@ -1797,7 +1840,7 @@ fieldset legend {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
 
     list-style: none;
 
@@ -1805,13 +1848,17 @@ fieldset legend {
 }
 
 .pagination-item {
-    padding: 30px 25px;
+    padding: 25px 25px;
 
     cursor: pointer;
 }
 
 .pagination-item-number{
     display: flex;
+}
+
+.pagination-item-number li {
+  padding: 25px 15px;
 }
 
 .pagination-item a {
