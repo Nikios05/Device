@@ -48,7 +48,7 @@ body {
 .visually-hidden {
     position: absolute;
 
-    widows: 1px;
+    width: : 1px;
     height: 1px;
     margin: -1px;
     border: 0;
@@ -1792,10 +1792,6 @@ fieldset legend{
 .catalog-sorting-list li {
   min-width: 60px;
   margin-right: 25px;
-}
-
-.catalog-sorting-list li:not(li:last-child) {
-    margin-right: 30px;
 }
 
 .catalog-sorting-list li a{
