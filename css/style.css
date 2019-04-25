@@ -193,23 +193,16 @@ a {
 
 .user-navigation-search {
     margin-right: 100px;
+    margin-right: auto;
 }
 
 .user-navigation-search .form-search{
     padding-left: 40px;
 }
 
-.navigation-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 48%;
-}
-
 .user-navigation-login {
-    margin-right: auto;
+    min-width: 260px;
+    margin-right: 20px;
 }
 
 .user-navigation-login a {
@@ -415,12 +408,18 @@ a {
 }
 
 .site-navigation-delivery {
-    margin-right: 35px;
+    margin-left: auto;
+
 }
 
 .site-navigation-warranty {
-    margin-right: auto;
+    margin-left: 40px;
 }
+
+.site-navigation-contacts {
+    margin-left: 100px;
+}
+
 
 .site-navigation-contacts a{
     margin-right: -4px;
@@ -477,21 +476,25 @@ a {
     display: flex;
 
     margin: 0;
-    padding: 25px 60px;
+    padding: 0;
 
     list-style: none;
 }
 
+.catalog-navigation-list {
+    margin: 0;
+    padding: 0;
+    padding: 25px 0;
+    margin-left: 60px;
 
-.catalog-navigation-section {
-    margin-right: 75px;
+    list-style: none;
 }
 
-.catalog-navigation li{
+.catalog-navigation-list li {
     margin-bottom: 15px;
 }
 
-.catalog-navigation li a{
+.catalog-navigation-list li a{
     font-family: "open_sanslight", Arial, sans-serif;
     font-size: 15px;
     /* line-height: 36px; */
@@ -500,13 +503,13 @@ a {
 }
 
 
-.catalog-navigation li a:hover,
-.catalog-navigation li a:focus{
+.catalog-navigation-list li a:hover,
+.catalog-navigation-list li a:focus{
     opacity: 0.6;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
 
-.catalog-navigation li a:active{
+.catalog-navigation-list li a:active{
     opacity: 0.3;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }
@@ -1974,6 +1977,7 @@ fieldset legend{
     margin-bottom: 27px;
 
     width: 200px;
+    cursor: pointer;
 }
 
 .item-add-compare {
@@ -2084,6 +2088,11 @@ fieldset legend{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 .pagination-item-number li {

@@ -19,7 +19,6 @@
                 <label class="form-btn-entry" for="form-btn-entry"></label>
               </form>
             </li>
-            <!-- <div class="navigation-wrapper"> -->
             <li class="user-navigation-login">
               <a class="personal-entry inactive" href="#">Войти</a>
               <a class="personal-entry user-name active" href="#">Валентин Петухов</a>
@@ -27,31 +26,37 @@
             </li>
             <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
             <li class="user-navigation-basket"><a href="#">Корзина</a></li>
-            <!-- </div> -->
           </ul>
         <ul class="site-navigation">
             <li class="site-navigation-catalog"><a href="catalog.html">Каталог товаров</a></li>
-            <!-- <div class="navigation-wrapper"> -->
             <li class="site-navigation-delivery"><a href="delivery.html">Доставка</a></li>
             <li class="site-navigation-warranty"><a href="warranty.html">Гарантия</a></li>
             <li class="site-navigation-contacts"><a href="contacts.html">Контакты</a></li>
-            <!-- </div> -->
         </ul>
         <div class="catalog-navigation-wrapper">
         <ul class="catalog-navigation">
-            <!-- <div class="catalog-navigation-section"> -->
+              
+        <li>
+          <ul class="catalog-navigation-list">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="catalog-monopod.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшнс-камеры</a></li>
-            <!-- </div> -->
-            <!-- <div class="catalog-navigation-section"> -->
+          </ul>
+        </li>
+
+        <li>
+          <ul class="catalog-navigation-list">
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
-            <!-- </div> -->
-            <!-- <div class="catalog-navigation-section"> -->
-            <li><a href="#">Квадрокоптеры</a></li>
-            <!-- </div> -->
+          </ul>
+        </li>
 
+        <li>
+          <ul class="catalog-navigation-list">
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        
         </ul>
         </div>
     </nav>
@@ -166,14 +171,14 @@
                         <p class="catalog-item-image">
                             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
                         </p>
-                        <!-- <div class="item-add-wrapper">
+                        <p class="catalog-item-price"><b>500 руб.</b></p>
+                    </a>
+                    <div class="item-add-wrapper">
                         <div class="item-add">
                             <button class="btn item-add-btn" type="submit">В корзину</button>
                             <button class="item-add-compare" type="submit">Добавить к сравнению</button>
                         </div>
-                        </div> -->
-                        <p class="catalog-item-price"><b>500 руб.</b></p>
-                    </a>
+                    </div>
                 </li>
                 <li class="catalog-item">
                    <a href="catalog-item.html">
@@ -181,14 +186,14 @@
                         <p class="catalog-item-image">
                             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                         </p>
-                        <!-- <div class="item-add-wrapper">
+                        <p class="catalog-item-price"><b>1 500 руб.</b></p>
+                    </a>
+                    <div class="item-add-wrapper">
                         <div class="item-add">
                             <button class="btn item-add-btn" type="submit">В корзину</button>
                             <button class="item-add-compare" type="submit">Добавить к сравнению</button>
                         </div>
-                        </div> -->
-                        <p class="catalog-item-price"><b>1 500 руб.</b></p>
-                    </a>
+                    </div>
                 </li>
 
                 <li class="catalog-item">
@@ -197,14 +202,14 @@
                         <p class="catalog-item-image">
                             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                         </p>
-                        <!-- <div class="item-add-wrapper">
+                        <p class="catalog-item-price"><b>2 500 руб.</b></p>
+                    </a>
+                    <div class="item-add-wrapper">
                         <div class="item-add">
                             <button class="btn item-add-btn" type="submit">В корзину</button>
                             <button class="item-add-compare" type="submit">Добавить к сравнению</button>
                         </div>
-                        </div> -->
-                        <p class="catalog-item-price"><b>2 500 руб.</b></p>
-                    </a>
+                    </div>
                 </li>
                 <li class="catalog-item">
                     <a href="catalog-item.html">
@@ -212,23 +217,25 @@
                         <p class="catalog-item-image catalog-item-new">
                             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
                         </p>
-                        <!-- <div class="item-add-wrapper">
+                        <p class="catalog-item-price"><b>4 900 руб.</b></p>
+                    </a>
+                    <div class="item-add-wrapper">
                         <div class="item-add">
                             <button class="btn item-add-btn" type="submit">В корзину</button>
                             <button class="item-add-compare" type="submit">Добавить к сравнению</button>
                         </div>
-                        </div> -->
-                        <p class="catalog-item-price"><b>4 900 руб.</b></p>
-                    </a>
+                    </div>
                 </li>
             </ul>
             <ul class="pagination-list">
                 <li class="pagination-item"><a>Назад</a></li>
-                <!-- <div class="pagination-item-number"> -->
-                    <li class="pagination-item pagination-item-current"><a>1</a></li>
-                    <li class="pagination-item"><a href="#">2</a></li>
-                    <li class="pagination-item"><a href="#">3</a></li>
-                <!-- </div> -->
+                <li>
+                    <ul class="pagination-item-number">
+                        <li class="pagination-item pagination-item-current"><a>1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                    </ul>
+                </li>
                 <li class="pagination-item"><a href="#">Вперед</a></li>
             </ul>
         </section>
