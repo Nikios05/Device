@@ -39,7 +39,7 @@ body {
     в PS межбуквенное расстоние = 200. Перевод в css по формуле:
     letter-spacing = (значениеPS * размерШрифта)/1000 px
     */
-    letter-spacing: 0.48px; 
+    letter-spacing: 0.48px;
 
     background-color: #ffffff;
 }
@@ -147,7 +147,7 @@ a {
 .form-search-entry{
     color: #000000;
 
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
 
     opacity: 0.3;
@@ -201,7 +201,7 @@ a {
     display: flex;
     margin: 0;
     padding: 0;
-    
+
     list-style: none;
 }
 
@@ -322,7 +322,7 @@ a {
 }
 
 .product {
-    margin-bottom: 185px;    
+    margin-bottom: 185px;
 }
 
 .product-list {
@@ -337,7 +337,7 @@ a {
 .product-list a {
     display: flex;
     flex-direction: column;
- 
+
     text-transform: none;
     color: #000000;
 }
@@ -362,15 +362,18 @@ a {
     margin: 0;
     padding: 0;
     width: 180px;
-    
+
     background-color: #ffffff;
 }
 
 .service {
-    display: flex;
     margin-bottom: 105px;
 
     background-color: #e5e5e5;
+}
+
+.service-wrapper {
+  display: flex;
 }
 
 .service-list {
@@ -487,7 +490,7 @@ a {
     background-color: #464646;
 }
 
-.inner-page .footer-main { 
+.inner-page .footer-main {
     margin-top: 0;
 }
 
@@ -616,7 +619,7 @@ a {
 
     background-color: #e5e5e5;
     border: none;
-    
+
     opacity: 0.5;
 }
 
@@ -648,7 +651,7 @@ a {
     padding: 0;
     margin-bottom: 50px;
     margin-left: 60px;
-    
+
     list-style: none;
 }
 
@@ -778,7 +781,7 @@ fieldset legend{
     list-style: none;
 }
 
-.catalog-sorting-list li a{ 
+.catalog-sorting-list li a{
     font-family: "open_sansregular", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -841,7 +844,7 @@ fieldset legend{
 .catalog-item-price{
     margin: 0;
     padding: 0;
-    
+
     font-family: "gilroylight", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -873,7 +876,7 @@ fieldset legend{
     font-size: 16px;
     letter-spacing: 3.6px;
     color: #000000;
-    
+
     opacity: 0.3;
 }
 
