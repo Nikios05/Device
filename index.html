@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header container">
-    <nav class="header-navigation">
+    <header class="main-header">
+    <div class="container">
+      <nav class="header-navigation">
         <h1><a class="main-header-logo" href="index.html">Device</a></h1>
         <ul class="user-navigation">
             <li class="user-navigation-search">
@@ -26,7 +27,7 @@
             </li>
             <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
             <li class="user-navigation-basket"><a href="#">Корзина</a></li>
-          </ul>
+        </ul>
         <ul class="site-navigation">
             <li class="site-navigation-catalog"><a href="catalog.html">Каталог товаров</a></li>
             <li class="site-navigation-delivery"><a href="delivery.html">Доставка</a></li>
@@ -35,7 +36,7 @@
         </ul>
         <div class="catalog-navigation-wrapper">
         <ul class="catalog-navigation">
-          
+
         <li>
           <ul class="catalog-navigation-list">
             <li><a href="#">Виртуальная реальность</a></li>
@@ -56,10 +57,11 @@
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </li>
-        
+
         </ul>
         </div>
-    </nav>
+      </nav>
+    </div>
     </header>
 
     <main class="content">
@@ -151,37 +153,37 @@
         <section class="product container">
           <h2 class="visually-hidden">Типы продуктов</h2>
           <ul class="product-list">
-            <li>
+            <li class="product-list-item">
               <a href="#">
                 <div><img src="svg/popular-vr.svg" width="97" height="55" alt="Виртуальная реальность"></div>
                 <p>Виртуальная реальность</p>
               </a>
             </li>
-            <li>
+            <li class="product-list-item">
               <a href="#">
                 <div><img src="svg/popular-selfi.svg" width="86" height="117" alt="Виртуальная реальность"></div>
                 <p>Моноподы <br>для селфи</p>
               </a>
             </li>
-            <li>
+            <li class="product-list-item">
               <a href="#">
                 <div><img src="svg/popular-cam.svg" width="71" height="87" alt="Виртуальная реальность"></div>
                 <p>Экшн-камеры</p>
               </a>
             </li>
-            <li>
+            <li class="product-list-item">
               <a href="#">
                 <div><img src="svg/popular-fitness.svg" width="107" height="65" alt="Виртуальная реальность"></div>
                 <p>Фитнес-браслеты</p>
               </a>
             </li>
-            <li>
+            <li class="product-list-item">
               <a href="#">
                 <div><img src="svg/popular-clock.svg" width="56" height="98" alt="Виртуальная реальность"></div>
                 <p>Умные часы</p>
               </a>
             </li>
-            <li>
+            <li class="product-list-item">
               <a href="#">
                 <div><img src="svg/poppular-copter.svg" width="132" height="69" alt="Виртуальная реальность"></div>
                 <p>Квадрокоптеры</p>
@@ -191,7 +193,8 @@
         </section>
 
         <section class="service">
-        <div class="service-wrapper container">
+        <div class="container">
+        <div class="service-wrapper">
           <h2 class="visually-hidden">Предлагаемые сервисы</h2>
           <ul class="service-list">
             <li>
@@ -232,6 +235,7 @@
           </div>
 
           </div>
+        </div>
         </section>
 
         <section class="brands container">
@@ -291,7 +295,9 @@
     </main>
 
     <footer class="footer-main">
-      <div class="footer-top container">
+      <div class="container">
+
+      <div class="footer-top">
       <a class="logo-footer" href="index.html">Device</a>
       <ul class="footer-user-navigation">
         <li class="user-navigation-login">
@@ -303,7 +309,8 @@
         <li class="user-navigation-basket"><a href="#">Корзина</a></li>
       </ul>
       </div>
-      <div class="footer-middle container">
+
+      <div class="footer-middle">
         <p class="address">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-site-navigation">
           <li><a href="deliery.html">Доставка</a></li>
@@ -312,7 +319,7 @@
         </ul>
         <p class="phone-number">Тел: +7(495)495-95-95</p>
       </div>
-      <div class="footer-bottom container">
+      <div class="footer-bottom">
         <div class="footer-bottom-line"></div>
         <ul class="social-btn">
           <li>
@@ -335,6 +342,8 @@
           <a href="#"><span class="visually-hidden">HTML Academy</span></a>
         </p>
       </div>
+
+    </div>
     </footer>
 
     <section class="popup popup-map">
