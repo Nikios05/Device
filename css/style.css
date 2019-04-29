@@ -140,9 +140,12 @@ a {
     width: 1040px;
     padding: 0 60px;
     padding-top: 1px; /* Потолок, что бы маргин не вылетал */
-    padding-bottom: 55px;
 
     background-color: #f7e296;
+}
+
+.js .header-navigation {
+  padding-bottom: 55px;
 }
 
 .header-navigation h1 {
@@ -189,6 +192,7 @@ a {
     text-transform: none;
 
     list-style: none;
+
 }
 
 .user-navigation-search {
@@ -196,13 +200,13 @@ a {
     margin-right: auto;
 }
 
-.user-navigation-search .form-search{
+.user-navigation-search .form-search {
     padding-left: 40px;
 }
 
 .user-navigation-login {
     min-width: 260px;
-    margin-right: 20px;
+    margin-right: 20px
 }
 
 .user-navigation-login a {
@@ -447,15 +451,14 @@ a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }
 
-.catalog-navigation-wrapper {
+.js .catalog-navigation-wrapper {
     position: relative;
     display: none;
 
     z-index: 5;
 }
 
-
-.catalog-navigation-show {
+.js .catalog-navigation-show {
     display: block;
 
     -webkit-animation-name: catalog-show;
@@ -470,21 +473,28 @@ a {
     display: -ms-flexbox;
     display: flex;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-
     width: 100%;
 
-    background-color: #f7e296;
     margin: 0;
     padding: 0;
 
+    background-color: #f7e296;
     list-style: none;
 }
 
+.js .catalog-navigation {
+    position: absolute;
+    top: 0;
+    left: -60px;
+
+    padding: 1px 60px;
+}
+
 .inner-page .catalog-navigation {
-  left: -60px;
+  padding: 0;
+}
+
+.js .inner-page .catalog-navigation {
   padding: 0 60px;
 }
 
@@ -731,6 +741,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -818,6 +829,7 @@ a {
 }
 
 .service-list {
+    display: none;
     position: relative;
 
     width: 300px;
@@ -827,7 +839,10 @@ a {
     padding: 0;
 
     list-style: none;
+}
 
+.js .service-list {
+    display: block;
 }
 
 .service-list:before {
@@ -846,7 +861,6 @@ a {
 
 .service-list li:not(:last-child) {
     margin-bottom: 35px;
-
 }
 
 .service-list .btn {
@@ -905,13 +919,19 @@ a {
 
 .service-description {
     width: 460px;
+    margin-right: 20px;
+}
+
+.js .service-description {
+    margin-right: 0;
 }
 
 .service-delivery {
-    display: none;
+    display: block;
 }
 
 .service-delivery:after {
+    display: none;
     content: "";
 
     position: absolute;
@@ -926,10 +946,11 @@ a {
 }
 
 .service-credit {
-    display: none;
+    display: block;
 }
 
 .service-credit:after {
+    display: none;
     content: "";
 
     position: absolute;
@@ -944,11 +965,12 @@ a {
 }
 
 .service-warranty {
-    display: none;
+    display: block;
 
 }
 
 .service-warranty:after {
+    display: none;
     content: "";
 
     position: absolute;
@@ -960,10 +982,21 @@ a {
     height: 195px;
 
     background: url(../svg/service-warranty.svg) no-repeat 0 0;
-
 }
 
-.service-show {
+.js .service-delivery,
+.js .service-credit,
+.js .service-warranty {
+  display: none;
+}
+
+.js .service-delivery:after,
+.js .service-credit:after,
+.js .service-warranty:after {
+  display: block;
+}
+
+.js .service-show {
     /* Появляется при нажатии
     на кнопку */
     display: block;
@@ -1008,6 +1041,7 @@ button.btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
@@ -2176,10 +2210,19 @@ fieldset legend{
 
 .popup {
     display: none;
-    position: fixed;
 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 40;
+}
+
+/* Для отдельной страницы фидбека, если JS не загрузится */
+.index-feedback .popup {
+    display: block;
+}
+
+.js .popup {
+    display: none;
+    position: fixed;
 }
 
 .popup p {
@@ -2188,10 +2231,8 @@ fieldset legend{
 }
 
 .popup-feedback {
-    top: 100px;
-    left: 50%;
-    margin-left: -480px;
     padding: 95px 100px 80px;
+    margin: 100px auto;
 
     width: 960px;
     min-height: 555px;
@@ -2200,6 +2241,12 @@ fieldset legend{
     box-sizing: border-box;
 }
 
+.js .popup-feedback {
+    top: 100px;
+    left: 50%;
+    margin: 0;
+    margin-left: -480px;
+}
 
 .feedback-form label {
     letter-spacing: 0;
@@ -2311,6 +2358,7 @@ fieldset legend{
 }
 
 .popup-close {
+    display: none;
     position: absolute;
     top: 22px;
     right: 22px;
@@ -2327,6 +2375,10 @@ fieldset legend{
     cursor: pointer;
 }
 
+.js .popup-close {
+  display: block;
+}
+
 .popup-close:hover,
 .popup-close:focus {
     opacity: 1;
@@ -2338,7 +2390,7 @@ fieldset legend{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }
 
-.popup-show {
+.js .popup-show {
     display: block;
     -webkit-animation-name: appearance;
             animation-name: appearance;
