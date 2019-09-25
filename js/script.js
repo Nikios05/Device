@@ -9,9 +9,6 @@ buttonCatalogShow.addEventListener("mouseover", function () {
 //     evt.preventDefault();
 // })
 
-buttonCatalogShow.addEventListener("click", function (evt) {
-    evt.preventDefault();
-})
 
 catalogShowStyle.addEventListener("mouseover", function () {
     catalogShowStyle.classList.add("catalog-navigation-show");
