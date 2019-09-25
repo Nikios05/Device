@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Device</title>
@@ -58,6 +58,7 @@
           </ul>
         </li>
 
+
         </ul>
         </div>
       </nav>
@@ -65,7 +66,7 @@
     </header>
 
     <main class="content">
-        <div class="container">
+      <div class="container">
             <input class="visually-hidden" type="radio" id="product-1" name="togle" checked>
             <input class="visually-hidden" type="radio" id="product-2" name="togle">
             <input class="visually-hidden" type="radio" id="product-3" name="togle">
@@ -148,7 +149,7 @@
           </div>
         </div>
         </section>
-        </div>
+      </div>
 
         <section class="product container">
           <h2 class="visually-hidden">Типы продуктов</h2>
@@ -194,19 +195,19 @@
 
         <section class="service">
         <div class="container">
-        <div class="service-wrapper">
+          <div class="service-wrapper">
           <h2 class="visually-hidden">Предлагаемые сервисы</h2>
-          <ul class="service-list">
-            <li>
-              <button class="btn service-active">Доставка</button>
-            </li>
-            <li>
-              <button class="btn">Гарантия</button>
-            </li>
-            <li>
-              <button class="btn">Кредит</button>
-            </li>
-          </ul>
+            <ul class="service-list">
+              <li>
+                <button class="btn service-active">Доставка</button>
+              </li>
+              <li>
+                <button class="btn">Гарантия</button>
+              </li>
+              <li>
+                <button class="btn">Кредит</button>
+              </li>
+            </ul>
 
           <div class="service-description service-delivery service-show">
               <h3 class="service-caption">Доставка</h3>
@@ -220,7 +221,7 @@
 
             <div class=" service-description service-warranty">
               <h3 class="service-caption">Гарантия</h3>
-              <p >
+              <p>
                   Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                   <br>Товар, не дом, конечно же.
               </p>
@@ -289,7 +290,7 @@
           <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
           <button class="btn btn-map">Увеличить</button>
           </p>
-          <a href="#" class="btn contats-btn">Напишите нам</a>
+          <a href="feedback.html" class="btn contats-btn">Напишите нам</a>
         </section>
         </div>
     </main>
@@ -307,7 +308,7 @@
         </li>
         <li class="user-navigation-сompare"><a href="#">Сравнить</a></li>
         <li class="user-navigation-basket"><a href="#">Корзина</a></li>
-      </ul>
+    </ul>
       </div>
 
       <div class="footer-middle">
@@ -378,6 +379,9 @@
       <button class="popup-close" type="button">Закрыть</button>
     </section>
 
+    <script>
+        document.documentElement.classList.replace("no-js", "js");
+    </script>
     <script src="js/script.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/service-slide.js"></script>

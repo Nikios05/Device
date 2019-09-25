@@ -2,7 +2,7 @@ var popupMap = document.querySelector(".popup-map");
 var popupMapBtn = document.querySelector(".btn-map");
 var popupFeedback = document.querySelector(".popup-feedback");
 var popupFeedbackBtn = document.querySelector(".contats-btn");
-var FeedbackName = document.querySelector("#feedback-form-name");
+var feedbackName = document.querySelector("#feedback-form-name");
 var popupCloseMap = popupMap.querySelector(".popup-close");
 var popupCloseFb = popupFeedback.querySelector(".popup-close");
 
@@ -10,7 +10,8 @@ popupCloseMap.addEventListener("click", function () {
     popupMap.classList.remove("popup-show");
 })
 
-popupCloseFb.addEventListener("click", function () {
+popupCloseFb.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popupFeedback.classList.remove("popup-show");
 })
 
